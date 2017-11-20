@@ -128,5 +128,18 @@
 	<footer id="footer">
 		<div>Developed by <a href="https://www.facebook.com/OfficialNitishKumar" target="_BLANK">Nitish Kumar Singh</a></div>
 	</footer>
+	<scriipt>
+		$(document).ready(function(){
+           $(window).bind('scroll', function() {
+           var navHeight = $( window ).height() -61;
+                 if ($(window).scrollTop() > navHeight) {
+                     $('nav').addClass('fixed');
+                 }
+                 else {
+                     $('nav').removeClass('fixed');
+                 }
+            });
+        });
+	<script/>
   </body>
   </html
